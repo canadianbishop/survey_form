@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name = "author"   content="canadian-bishop">
+      <meta name = "description" content="a survey form">
+      <link rel= "stylesheet" href ="styles.css">
+      <title>survey form</title>
+</head>
+<body>
+      
+
+<main>
+
+      <header>
+            <h1 id= "title">Bishop Academy</h1>
+            <p id="description">This form form is aimed at getting constructive feedbacks from participants... </p>
+      </header>
+
+
+      <form id="survey-form"> 
+            <div>
+                  <label for="name" id="name-label">Name</label>      
+                  <input type="text" id="name" placeholder="Enter Name" required>
+            </div>      
+            <div>
+                  <label for="email" id="email-label">Email</label>      
+                  <input type="email" id="email" placeholder="Enter Email" required>
+            </div>
+            <div>
+                  <label for="number" id ="number-label">Number</label>      
+                  <input type="number" id="number" placeholder="Enter Number" max="11" min="4">
+            </div>
+            
+            <div>
+                  <label for="dropdown">What is your current employment status?</label>
+                  <select id="dropdown">
+                        <option>GAINFULLY EMPLOYED</option>
+                        <option value="">UNEMPLOYED</option>
+                        <option value="">STUDENT</option>
+                        <option value="">SELF EMPLOYED</option>
+                        <option value="">OTHER</option>
+                  </select>
+            </div>
+
+
+            <!-- radio buttons -->
+            <div class="radio">
+                  <p>How Would You Best Descibe Our Tutors?</p>
+                  <div class="rate"> 
+                        <input type="radio" id="prof" name="rate" value="a" >
+                        <label for="prof" class="prof">Professional</label>
+                  </div>
+                  <div class="rate">
+                        <input type="radio" id="unprof" name="rate" value ="b" >
+                        <label for="unprof" class="prof">Unprofessional</label>
+                  </div>
+                  <div class="rate">
+                        <input type="radio" id="rude" name="rate" value ="c" >
+                        <label for="rude" class="prof">Rude</label>
+                  </div>
+                  <div class="rate">
+                        <input type="radio" id="polite" name="rate" value="d" >
+                        <label for="polite" class="prof">Polite</label>
+                  </div>     
+            </div>
+
+            <!-- checkbox -->
+
+            <div class="skills">
+                  <p>what other skills should be included to the curriculum</p>
+                  <div>
+                        <input type="checkbox" id="cyber" value="a">
+                        <label class="check" for="cyber">Cyber Security</label>
+                  </div>
+                  <div>
+                        <input type="checkbox" id="data" value="b">
+                        <label class="check" for="data">Data Science</label>
+                  </div>
+                  <div>
+                        <input type="checkbox" id="robotics" value="c">
+                        <label class="check" for="robotics">Robotics</label>
+                  </div>
+                  <div>
+                        <input type="checkbox" id="cloud" value="d">
+                        <label class="check" for="cloud">Cloud Computing</label>
+                  </div>
+                  <div>
+                        <input type="checkbox" id="Management" value="e">
+                        <label class="check" for="Management">Database Management</label>
+                  </div>
+                  <div>
+                        <input type="checkbox" id="fullstack" value="f">
+                        <label class="check" for="fullstack">fullstack Web Development</label>
+                  </div>
+                  <div>
+                        <input type="checkbox" id="other" value="g">
+                        <label class="check" for="other">Others</label>
+                  </div>
+            </div>
+
+            <!-- other courses suggestions -->
+             <div class="others">
+                  <p>If one of your inputs in the last section includes others, specify them below</p>
+                  <input type="text" placeholder="Include Other Courses here">
+             </div>
+
+             <div class="area">
+                  <p>if you have any other suggestions regarding how can be of better service to you please include them below</p>
+                  <textarea id="suggestions" placeholder="enter suggestions here"></textarea>
+             </div>
+
+             <div class="btn">
+                  <input type="submit" id="submit">
+             </div>
+
+      </form>
+</main>
+
+</body>
+</html>           

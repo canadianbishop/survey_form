@@ -1,0 +1,162 @@
+*{
+      padding:0;
+      margin: 0;
+      font-family: arial, helvatica,sans-serif;
+      box-sizing: border-box;
+    }
+    
+
+    body{
+      background: linear-gradient(rgba(0, 128, 255, 0.5), rgba(34, 139, 34, 0.5));
+      padding: 5%;
+    }
+    
+/* header section */
+
+
+    header{
+      max-width: 600px;
+      margin: auto;
+      
+    }
+    
+    h1{
+      font-size: 25px;
+      font-weight: bold;
+      font-size: 40px;
+      color: rgb(14, 204, 96);
+      margin: auto;
+      margin-bottom: 15px;
+      width: fit-content;
+    }
+
+    header > p{
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 30px;
+      padding: 10px 0px;
+    }
+
+
+    /* main section */
+
+    main{
+      max-width: 650px;
+      background: rgb(241, 235, 235);
+      height: fit-content;
+      margin: auto;
+      border-radius: 20px;
+      padding: 30px 15px;
+    }
+
+    form{
+      max-width: 500px;
+      background: rgb(248, 246, 246);
+      margin: auto;
+      padding:20px 30px;
+    }
+
+    form > div{
+      margin-bottom: 30px;
+    }
+
+    label{
+      display: block;
+      margin-bottom: 5px;
+      font-size: 17px;
+    }
+
+    input{
+      width:100%;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+
+    input::placeholder{
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    select{
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    /* radio field */
+    .rate{
+      margin-bottom: 10px;
+    }
+    input[type="radio"]{
+      display: inline;
+      width: fit-content;
+    }
+    .prof,
+    .check{
+      display: inline;
+      margin-left: 5px;
+      font-size: 20px;
+    }
+
+    div.radio > p,
+    div.skills >p,
+    div.others >p,
+    div.area >p{
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+
+    /* checkboxex */
+
+    input[type="checkbox"]{
+            width: fit-content;
+    }
+
+    div.skills > div{
+      margin-bottom: 10px;
+    }
+
+    textarea{
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+    }
+
+    input[type="submit"]{
+      width: 100%;
+      color: white;
+      background:black;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .btn{
+      margin: auto;
+      width: 100px;
+          }
+
+    
+
+/* media queries */
+
+@media (max-width:375px){
+      h1{
+            font-size: 20px;
+      }
+
+      body{
+            padding: 10%;
+      }
+}
+
+@media (min-width: 375px) and (max-width: 414px){
+      h1{
+            font-size: 20px;
+      }
+
+      body{
+            padding: 10%;
+      }
+}
